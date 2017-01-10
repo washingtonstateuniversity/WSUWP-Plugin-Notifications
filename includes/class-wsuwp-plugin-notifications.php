@@ -17,17 +17,9 @@ class WSUWP_Plugin_Notifications {
 	public static function get_instance() {
 		if ( ! isset( self::$instance ) ) {
 			self::$instance = new WSUWP_Plugin_Notifications();
-			self::$instance->setup_hooks();
 		}
 		return self::$instance;
 	}
-
-	/**
-	 * Setup hooks to include.
-	 *
-	 * @since 0.0.1
-	 */
-	public function setup_hooks() {}
 
 	/**
 	 * Sends a notification to a Slack Webhook.
