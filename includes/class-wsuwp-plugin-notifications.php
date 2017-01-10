@@ -51,7 +51,7 @@ class WSUWP_Plugin_Notifications {
 
 		$payload = 'payload=' . wp_json_encode( $message );
 
-		$url = apply_filters( 'wsuwp_slack_notification_url', '', $context, $room, $data );
+		$url = apply_filters( 'wsuwp_notifications_slack_webhook_url', '', $context, $room, $data );
 
 		if ( empty( $url ) ) {
 			return false;
