@@ -14,14 +14,14 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 // The core plugin class.
-require dirname( __FILE__ ) . '/includes/class-wsuwp-plugin-notifications.php';
+require dirname( __FILE__ ) . '/includes/class-wsuwp-notifications.php';
 
-add_action( 'after_setup_theme', 'WSUWP_Plugin_Notifications' );
+add_action( 'after_setup_theme', 'WSUWP_Notifications' );
 /**
  * Start things up.
  *
- * @return \WSUWP_Plugin_Notifications
+ * @return \WSUWP_Notifications
  */
-function WSUWP_Plugin_Notifications() {
-	return WSUWP_Plugin_Notifications::get_instance();
+function WSUWP_Notifications() {
+	return WSUWP_Notifications::get_instance();
 }

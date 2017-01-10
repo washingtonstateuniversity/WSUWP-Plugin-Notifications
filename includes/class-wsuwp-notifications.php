@@ -1,8 +1,8 @@
 <?php
 
-class WSUWP_Plugin_Notifications {
+class WSUWP_Notifications {
 	/**
-	 * @var WSUWP_Plugin_Notifications
+	 * @var WSUWP_Notifications
 	 */
 	private static $instance;
 
@@ -12,11 +12,11 @@ class WSUWP_Plugin_Notifications {
 	 *
 	 * @since 0.0.1
 	 *
-	 * @return \WSUWP_Plugin_Notifications
+	 * @return \WSUWP_Notifications
 	 */
 	public static function get_instance() {
 		if ( ! isset( self::$instance ) ) {
-			self::$instance = new WSUWP_Plugin_Notifications();
+			self::$instance = new WSUWP_Notifications();
 		}
 		return self::$instance;
 	}
